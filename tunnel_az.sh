@@ -4,10 +4,12 @@ vm=$2
 
 key=$rg"_"$vm"_id_rsa"
 
+
 remote_begin=8889
 remote_end=8899
 offset_local=1000
-ip=$(az vm list-ip-addresses -g $rg -n $vm |  python -c "import json,sys;obj=json.load(sys.stdin);print obj[0]['virtualMachine']['network']['publicIpAddresses'][0]['ipAddress'];")
+
+ip=$(./ip_az.sh $rg $vm)
 
 echo "tunneling ports $remote_begin-$remote_end to +$offset_local locally"
 echo "interrupt to close tunnels"
