@@ -10,6 +10,7 @@ SQLAlchemy
 pandas
 xlwt
 xlrd
+bcolz
 
 #Prototyping
 notebook
