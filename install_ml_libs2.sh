@@ -4,7 +4,7 @@
 
 pip install theano
 echo "[global]
-device = gpu
+device = cpu
 floatX = float32" > ~/.theanorc
 
 pip install keras
