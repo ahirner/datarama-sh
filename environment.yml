@@ -17,7 +17,7 @@ dependencies:
 - sqlite>=3.13
 
 - pytorch>=0.1.12
-- torchvision=>0.1.8
+- torchvision
 
 - pip:
   - annoy>=1.9.1

@@ -7,6 +7,6 @@ conda create --name fat-ml
 echo "source activate fat-ml" >> .bashrc
 source .bashrc
 
-conda enf update -f=./environment.yml
+conda env update -f=./environment.yml
 
 rm Miniconda3-latest-Linux-x86_64.sh
