@@ -1,0 +1,36 @@
+name: fat-ml
+channels:
+- soumith
+- defaults
+dependencies:
+- jupyter
+
+- matplotlib
+- numpy
+- pandas
+- pillow
+- pip
+- python>=3.6
+
+- six
+- sqlalchemy>=1.1
+- sqlite>=3.13
+
+- pytorch>=0.1.12
+- torchvision=>0.1.8
+
+- pip:
+  - annoy>=1.9.1
+  - configargparse>=0.12.0
+  - dash
+  - dash-core-components
+  - dash-html-components
+  - dash-renderer
+  - plotly
+  - dogpile.cache
+  - flasgger
+  - flask>=0.12.2
+  - gunicorn
+  - jupyterthemes
+  - requests
+  - tensorflow>=1.2
