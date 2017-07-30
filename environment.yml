@@ -16,9 +16,9 @@ dependencies:
 - sqlalchemy>=1.1
 - sqlite>=3.13
 
-- pytorch>=0.1.12
-- torchvision
-
+#- cuda80=1.0=0 #Go with the regular CUDA install and pytorch from source way!
+#- pytorch=0.1.12=py36_2cu80
+#- torchvision=0.1.8=py36_2
 - pip:
   - annoy>=1.9.1
   - configargparse>=0.12.0
@@ -33,4 +33,4 @@ dependencies:
   - gunicorn
   - jupyterthemes
   - requests
-  - tensorflow>=1.2
+  - tensorflow-gpu
